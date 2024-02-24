@@ -39,7 +39,7 @@ O jogo tem como objetivo principal demonstrar o funcionamento básico de animaç
 
    ```bash
    git clone https://github.com/seu-usuario/mario-jump.git
-2.Autor
+## Autor
 -  Marco Antônio Menezes Jorge
 
 ## REFERENCIAS
