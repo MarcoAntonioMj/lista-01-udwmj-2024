@@ -1,78 +1,75 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin: 0; /* Define margem zero para todos os elementos */
+    padding: 0; /* Define padding zero para todos os elementos */
+    box-sizing: border-box; /* Define o modelo de caixa, incluindo padding e border no tamanho total */
 }
 
 .game-board{
-    width: 100%;
-    height: 500px;
-    border-bottom: 15px solid green;
-    margin: 0 auto;
-    position: relative;
-    overflow: hidden;
-    background: linear-gradient(#87ceeb,#e0f6ff);
-
+    width: 100%; /* Largura total */
+    height: 500px; /* Altura de 500 pixels */
+    border-bottom: 15px solid green; /* Borda na parte inferior de 15 pixels de largura e cor verde */
+    margin: 0 auto; /* Margens superior e inferior zero, margem automática nas laterais */
+    position: relative; /* Posição relativa ao seu elemento pai */
+    overflow: hidden; /* Esconde conteúdo que estoura os limites do elemento */
+    background: linear-gradient(#87ceeb,#e0f6ff); /* Fundo gradiente linear de azul para branco */
 }
 
 .pipe{
-    position: absolute;
-    bottom: 0;
-    width: 80px;
-    right: -80px;
-    animation: pipe-animation 1.5s infinite linear;
-
+    position: absolute; /* Posição absoluta em relação ao seu elemento pai */
+    bottom: 0; /* Alinhamento na parte inferior do elemento pai */
+    width: 80px; /* Largura de 80 pixels */
+    right: -80px; /* Inicialmente posicionado 80 pixels à direita do elemento pai */
+    animation: pipe-animation 1.5s infinite linear; /* Animação de pipe-animation com duração de 1.5 segundos, repetição infinita e linear */
 }
+
 .mario {
-    width: 150px;
-    position: absolute;
-    bottom: 0;
+    width: 150px; /* Largura de 150 pixels */
+    position: absolute; /* Posição absoluta em relação ao seu elemento pai */
+    bottom: 0; /* Alinhamento na parte inferior do elemento pai */
 }
 
 .jump{
-    animation: jump 500ms  ease-out;
-
+    animation: jump 500ms ease-out; /* Animação de jump com duração de 500 milissegundos e efeito ease-out */
 }
 
 .clouds{
-    position: absolute;
-    width: 500px;
-    animation: clouds-animation 20s infinite linear;
+    position: absolute; /* Posição absoluta em relação ao seu elemento pai */
+    width: 500px; /* Largura de 500 pixels */
+    animation: clouds-animation 20s infinite linear; /* Animação de clouds-animation com duração de 20 segundos, repetição infinita e linear */
 }
 
 @keyframes pipe-animation{
     from {
-        right: 0;
+        right: 0; /* Início da animação com posição à direita 0 */
     }
     to {
-        right: 100%;
+        right: 100%; /* Fim da animação com posição à direita 100% (fora do elemento pai) */
     }
 }
 
 @keyframes jump {
     0%{
-        bottom: 0;
+        bottom: 0; /* 0% da animação com o mário na parte inferior do elemento pai */
     }
     40%{
-        bottom: 180px;
+        bottom: 180px; /* 40% da animação com o mário 180 pixels acima da parte inferior do elemento pai */
     }
     50%{
-        bottom: 180px;
+        bottom: 180px; /* 50% da animação com o mário ainda 180 pixels acima da parte inferior do elemento pai */
     }
     60%{
-        bottom: 180px;
+        bottom: 180px; /* 60% da animação com o mário ainda 180 pixels acima da parte inferior do elemento pai */
     }
     100%{
-        bottom: 0;
+        bottom: 0; /* 100% da animação com o mário novamente na parte inferior do elemento pai */
     }
 }
 
 @keyframes clouds-animation{
     from {
-        right: -500px;
+        right: -500px; /* Início da animação com nuvens 500 pixels à esquerda do elemento pai */
     }
     to {
-        right: 100%;
+        right: 100%; /* Fim da animação com nuvens 100% à direita do elemento pai */
     }
 }
-
