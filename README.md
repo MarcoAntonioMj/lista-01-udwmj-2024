@@ -38,7 +38,7 @@ O jogo tem como objetivo principal demonstrar o funcionamento básico de animaç
 1. Clone o repositório para o seu computador:
 
    ```bash
-   git clone https://github.com/seu-usuario/mario-jump.git
+   git clone https://github.com/seu-usuario/mario-jump.git](https://github.com/MarcoAntonioMj/lista-01-udwmj-2024.git)
 ## Autor
 -  Marco Antônio Menezes Jorge
 
